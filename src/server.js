@@ -16,7 +16,7 @@ io.on("connection", socket => {
     })
 });
 
-mongoose.connect('mongodb://localhost/dropbox', {
+mongoose.connect('mongodb+srv://mongodb:mongodb@cluster0-tuzqu.mongodb.net/dropbox?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => {
     console.log('Conectado ao mongo com sucesso!');
